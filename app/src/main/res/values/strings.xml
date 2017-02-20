@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PopularMoviesApp</string>
+
+
+    <string name="title">Title : </string>
+    <string name="overview">Overview </string>
+    <string name="publishedDate">Release Date : </string>
+    <string name="vote">User Rating : </string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Text to display in the list when there are no news [CHAR LIMIT=NONE] -->
+    <string name="no_news">No movies found.</string>
+
+</resources>

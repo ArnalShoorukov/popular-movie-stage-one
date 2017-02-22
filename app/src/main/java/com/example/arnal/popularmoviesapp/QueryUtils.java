@@ -42,7 +42,7 @@ public class QueryUtils {
         }
         //Extract relevant fields from the JSON response and create a list {@link Movies}s
         List<Movies> movies = extractMoviesDataJson(jsonResponse);
-        Log.v("Loader State","Loader fetched data from fetchNewsData() method. ");
+        Log.v("Loader State", "Loader fetched data from fetchNewsData() method. " + movies);
         return movies;
     }
 
@@ -116,7 +116,6 @@ public class QueryUtils {
                     releaseDate = "N/A";
                 }
 
-
                 moviesData.add(new Movies(title, posterPath, overview, userRating, releaseDate));
             }
         } catch (JSONException e) {
@@ -127,7 +126,6 @@ public class QueryUtils {
         }
         // Return the list of movies
         return moviesData;
-
     }
 
     private static String makeHTTPRequest(URL url) throws IOException{
@@ -167,7 +165,6 @@ public class QueryUtils {
             }
         }
         return jsonResponse;
-
     }
 
     private static String readFromStream(InputStream inputStream) throws IOException {
@@ -193,8 +190,5 @@ public class QueryUtils {
             Log.e(LOG_TAG, "Problem building the URL ", e);
         }
         return url;
-
     }
-
-
 }

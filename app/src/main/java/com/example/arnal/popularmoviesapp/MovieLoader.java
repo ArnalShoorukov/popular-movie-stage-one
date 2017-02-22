@@ -12,7 +12,6 @@ import java.util.List;
 
 public class MovieLoader extends AsyncTaskLoader<List<Movies>> {
 
-
     /** Tag for log messages */
     private static final String LOG_TAG = MovieLoader.class.getName();
 
